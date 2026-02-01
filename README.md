@@ -10,7 +10,7 @@
 
 ---
 
-## What This Repository Is
+## What This Repository Is?
 This repository presents an **intent-driven framework** for risk detection in fraud, AML, and trust & safety systems.
 
 It demonstrates how **raw transactional behaviour** can be systematically transformed into:

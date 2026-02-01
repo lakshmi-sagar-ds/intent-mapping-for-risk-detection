@@ -41,9 +41,6 @@ Each layer removes noise and adds structure, ensuring investigations translate i
 - **Intent Map Template**  
   A reusable template for converting analysed behaviour into a structured intent map.
 
-- **Rule Design Template**  
-  A standardised format for translating intent into controllable detection rules.
-
 - **Example Intent Map**  
   A fully synthetic example demonstrating the framework end-to-end (no real data).
 

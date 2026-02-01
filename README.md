@@ -4,110 +4,57 @@
 
 ## 🔐 Data Privacy Note
 
-- All examples in this repository are **fully abstracted**.
-- No real customer data, identifiers, or sensitive attributes are included.
+- All examples in this repository are **fully abstracted or synthetic**.
+- No real customer data, - proprietary systems, identifiers, or sensitive attributes are included.
 - **This repository focuses exclusively on the methodology and thinking framework, not proprietary data.**
 
 ---
 
-## ✅ Objective
-This project demonstrates a **structured methodology** for converting raw transactional behaviour into:
-- Fraud intent understanding
-- Modus Operandi (MO) decomposition
-- Actionable, controllable detection rules
+## What This Repository Is
+This repository presents an **intent-driven framework** for risk detection in fraud, AML, and trust & safety systems.
 
-The framework was developed in a fintech risk environment to help analysts move from **manual case reviews** to **repeatable hypothesis-driven rule creation**, without relying on sensitive data exposure.
-
----
-
-## Problem Context
-Fraud and mule accounts often evolve in **phases**:
-- Dormancy
-- Testing
-- Cool-off
-- Pilot runs
-- Full-scale execution
-
-Traditional rule systems detect isolated anomalies but fail to capture **behavioural progression over time**.  
-This framework addresses that gap by focusing on **intent, sequence, and change in behaviour**, rather than single events.
+It demonstrates how **raw transactional behaviour** can be systematically transformed into:
+- Behavioural understanding
+- Intent inference
+- High-precision detection hypotheses and rules
 
 ---
 
-## Framework Overview (4 Layers)
+## Why Intent Mapping?
+Most risk systems detect **isolated anomalies**. Real-world fraud and mule activity, however, unfold through **sequences of behaviour over time**.
 
-### 1️⃣ Case Review Abstraction
-- Start with reviewed fraud accounts (data abstracted)
-- Focus on **what changed** vs historical behavior
-- Ignore absolute values; prioritize **patterns and transitions**
+This framework addresses that gap by:
+- Modelling **behavioural progression**
+- Inferring **intent behind actions**
+- Designing **explainable, controllable detection logic**
 
----
 
-### 2️⃣ Raw Behaviour Decomposition
-Break transactions into **primitive behavioral events**, such as:
-- Dormancy breaks
-- Burst credits
-- Self FIFO loops
-- ATM proxy cash-outs
-- Unknown P2P inflows
-- Device / SIM changes
-
-At this stage, transactions are reduced to **behavioural signals**, not financial details.
+Each layer removes noise and adds structure, ensuring investigations translate into **preventive system learning**.
 
 ---
 
-### 3️⃣ Intent Mapping
-Behavioral signals are grouped into **phases** to form an **Intent Map**.
+## 📂 Repository Contents
 
-Each phase answers:
-- What was the likely intent?
-- Was this testing, scaling, evasion, or execution?
-- What is the next expected action?
+- **framework_overview.md**  
+  A detailed explanation of the intent-mapping methodology, including behavioural flags, phase decomposition, intent inference, and rule design principles.
 
-This converts raw timelines into a **story of account behaviour**.
+- **intent_map_template.md**  
+  A reusable template for converting analysed behaviour into a structured intent map.
 
----
+- **rule_design_template.md**  
+  A standardised format for translating intent into controllable detection rules.
 
-### 4️⃣ Rule & Hypothesis Creation
-Each completed intent map produces:
-- 1–2 detection hypotheses
-- A structured rule definition:
-  - Objective
-  - Key flags (2–4)
-  - Logic (relative, not static thresholds)
-  - Expected detection behaviour
-- Controllability assessment (false positives vs coverage)
+- **example_intent_map.md**  
+  A fully synthetic example demonstrating the framework end-to-end (no real data).
 
-This ensures every case review leads to **system-level learning**.
 
----
-
-## 🧩 Key Concepts Used
-- Intent-driven analysis (not anomaly-only)
-- Phase-based behavior modeling
-- Relative thresholds over static limits
-- Human-in-the-loop risk design
-- Precision-focused fraud detection
-
----
-
-## Outcome & Impact
-- Standardised how analysts convert cases into rules
-- Reduced subjectivity in manual reviews
-- Enabled weekly hypothesis generation as a formal process
-- Improved detection precision by combining:
-  - Inactivity + burst
-  - FIFO + device change
-  - Behaviour sequencing over time
-
-## Why This Matters
-This project demonstrates:
-- How to think like a fraudster
-- How to translate investigations into prevention
-- How to design explainable, regulator-safe rules
-- How to scale fraud learning across teams
-
-This framework applies to:
+It applies to:
 - Fraud detection
-- AML monitoring
-- Trust & Safety systems
-- Risk decision engines
+- AML transaction monitoring
+- Trust & Safety platforms
+- Risk decision engines in fintech and digital products
+
+---
+
+## 👤 Author: Lakshmi Sagar SP
+Developed as part of applied work in fintech-risk-ops, with a focus on **intent-driven detection design and complaint reduction through precision-first systems**.

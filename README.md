@@ -5,7 +5,7 @@
 ## 🔐 Data Privacy Note
 
 - All examples in this repository are **fully abstracted or synthetic**.
-- No real customer data, - proprietary systems, identifiers, or sensitive attributes are included.
+- No real customer data, proprietary systems, identifiers, or sensitive attributes are included.
 - **This repository focuses exclusively on the methodology and thinking framework, not proprietary data.**
 
 ---

@@ -35,16 +35,16 @@ Each layer removes noise and adds structure, ensuring investigations translate i
 
 ## 📂 Repository Contents
 
-- **framework_overview.md**  
+- **Framework Overview**  
   A detailed explanation of the intent-mapping methodology, including behavioural flags, phase decomposition, intent inference, and rule design principles.
 
-- **intent_map_template.md**  
+- **Intent Map Template**  
   A reusable template for converting analysed behaviour into a structured intent map.
 
-- **rule_design_template.md**  
+- **Rule Design Template**  
   A standardised format for translating intent into controllable detection rules.
 
-- **example_intent_map.md**  
+- **Example Intent Map**  
   A fully synthetic example demonstrating the framework end-to-end (no real data).
 
 
